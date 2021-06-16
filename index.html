@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Error</title>
+    <style>
+       
+        
+        body {
+            background-image: url("images/squirrel.jpg");
+            background-color: #cccccc;
+            background-position: center;
+            background-attachment: fixed;
+           
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            margin: auto;
+            text-align: center;
+            color: rgb(63, 59, 37);
+            
+                      
+           
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <article class="animate__animated animate__bounceInDown container" id="intro">
+    
+        <h1 >Nope! 404 !</h1>
+        <h2> Page Not Found!</h2>
+      
+    </article>
+
+
+    <section>
+        <form action="https://github.com/robbertklockaerts">
+            <input type="submit" value="Go to github" />
+        </form>
+    </section>
+
+<script>
+
+     let element = document.getElementById("intro");
+   
+   
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+      
+        element.className = element.className.replace("animate__animated animate__bounceInDown","animate__animated animate__shakeX animate__repeat-3");
+        }, 1200);
+    });
+
+
+</script>
+
+</body>
+
+
+</html>
